@@ -1,32 +1,13 @@
-import * as avif from '@jsquash/avif';
-import * as jpeg from '@jsquash/jpeg';
-import * as jxl from '@jsquash/jxl';
-import * as png from '@jsquash/png';
-import * as webp from '@jsquash/webp';
 import type { OutputType, CompressionOptions } from '../types';
 import type { AvifEncodeOptions, JpegEncodeOptions, JxlEncodeOptions, WebpEncodeOptions } from '../types/encoders';
 import { ensureWasmLoaded } from './wasm';
 
 export async function decode(sourceType: string, fileBuffer: ArrayBuffer): Promise<ImageData> {
-  // Ensure WASM is loaded for the source type
-  await ensureWasmLoaded(sourceType as OutputType);
+  // 彻底解除首页静态 import 绑定，真正按需动态加载 WASM 编解码器
+  const codec = await ensureWasmLoaded(sourceType);
 
   try {
-    switch (sourceType) {
-      case 'avif':
-        return await avif.decode(fileBuffer);
-      case 'jpeg':
-      case 'jpg':
-        return await jpeg.decode(fileBuffer);
-      case 'jxl':
-        return await jxl.decode(fileBuffer);
-      case 'png':
-        return await png.decode(fileBuffer);
-      case 'webp':
-        return await webp.decode(fileBuffer);
-      default:
-        throw new Error(`Unsupported source type: ${sourceType}`);
-    }
+    return await codec.decode(fileBuffer);
   } catch (error) {
     console.error(`Failed to decode ${sourceType} image:`, error);
     throw new Error(`Failed to decode ${sourceType} image`);
@@ -34,37 +15,36 @@ export async function decode(sourceType: string, fileBuffer: ArrayBuffer): Promi
 }
 
 export async function encode(outputType: OutputType, imageData: ImageData, options: CompressionOptions): Promise<ArrayBuffer> {
-  // Ensure WASM is loaded for the output type
-  await ensureWasmLoaded(outputType);
+  const codec = await ensureWasmLoaded(outputType);
 
   try {
     switch (outputType) {
       case 'avif': {
         const avifOptions: AvifEncodeOptions = {
           quality: options.quality,
-          effort: 4 // Medium encoding effort
+          effort: 4
         };
-        return await avif.encode(imageData, avifOptions as any);
+        return await codec.encode(imageData, avifOptions as any);
       }
       case 'jpeg': {
         const jpegOptions: JpegEncodeOptions = {
           quality: options.quality
         };
-        return await jpeg.encode(imageData, jpegOptions as any);
+        return await codec.encode(imageData, jpegOptions as any);
       }
       case 'jxl': {
         const jxlOptions: JxlEncodeOptions = {
           quality: options.quality
         };
-        return await jxl.encode(imageData, jxlOptions as any);
+        return await codec.encode(imageData, jxlOptions as any);
       }
       case 'png':
-        return await png.encode(imageData);
+        return await codec.encode(imageData);
       case 'webp': {
         const webpOptions: WebpEncodeOptions = {
           quality: options.quality
         };
-        return await webp.encode(imageData, webpOptions as any);
+        return await codec.encode(imageData, webpOptions as any);
       }
       default:
         throw new Error(`Unsupported output type: ${outputType}`);

@@ -3,28 +3,24 @@ import type { OutputType } from '../types';
 // Track WASM module initialization
 const wasmInitialized = new Map<OutputType, boolean>();
 
-export async function ensureWasmLoaded(format: OutputType): Promise<void> {
-  if (wasmInitialized.get(format)) return;
+export async function ensureWasmLoaded(format: string): Promise<any> {
+  const normalized = format === 'jpg' ? 'jpeg' : format;
   
   try {
-    switch (format) {
+    switch (normalized) {
       case 'avif':
-        await import('@jsquash/avif');
-        break;
+        return await import('@jsquash/avif');
       case 'jpeg':
-        await import('@jsquash/jpeg');
-        break;
+        return await import('@jsquash/jpeg');
       case 'jxl':
-        await import('@jsquash/jxl');
-        break;
+        return await import('@jsquash/jxl');
       case 'png':
-        await import('@jsquash/png');
-        break;
+        return await import('@jsquash/png');
       case 'webp':
-        await import('@jsquash/webp');
-        break;
+        return await import('@jsquash/webp');
+      default:
+        throw new Error(`Unsupported format: ${format}`);
     }
-    wasmInitialized.set(format, true);
   } catch (error) {
     console.error(`Failed to initialize WASM for ${format}:`, error);
     throw new Error(`Failed to initialize ${format} support`);
