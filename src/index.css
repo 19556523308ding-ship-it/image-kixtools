@@ -41,7 +41,7 @@
 
 @layer components {
   /* 品牌质量滑块：修复原先完全未样式化的原生控件 */
-  .kix-range {
+  .brand-range {
     -webkit-appearance: none;
     appearance: none;
     width: 100%;
@@ -59,7 +59,7 @@
     );
   }
 
-  .kix-range::-webkit-slider-thumb {
+  .brand-range::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     height: 1.375rem;
@@ -72,16 +72,16 @@
       box-shadow 0.15s ease;
   }
 
-  .kix-range::-webkit-slider-thumb:hover {
+  .brand-range::-webkit-slider-thumb:hover {
     transform: scale(1.08);
     box-shadow: 0 0 0 6px rgba(69, 120, 245, 0.16);
   }
 
-  .kix-range:focus-visible::-webkit-slider-thumb {
+  .brand-range:focus-visible::-webkit-slider-thumb {
     box-shadow: 0 0 0 6px rgba(69, 120, 245, 0.24);
   }
 
-  .kix-range::-moz-range-thumb {
+  .brand-range::-moz-range-thumb {
     height: 1.375rem;
     width: 1.375rem;
     border-radius: 9999px;
@@ -91,14 +91,14 @@
     transition: transform 0.15s ease;
   }
 
-  .kix-range::-moz-range-track {
+  .brand-range::-moz-range-track {
     height: 0.5rem;
     border-radius: 9999px;
     background: transparent;
   }
 
   /* 卡片基础外观 */
-  .kix-card {
+  .brand-card {
     @apply bg-white rounded-xl2 border border-ink-200/70 shadow-card;
   }
 }

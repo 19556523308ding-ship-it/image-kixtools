@@ -20,7 +20,7 @@ export function ImageList({ images, onRemove }: ImageListProps) {
       {images.map((image) => (
         <div
           key={image.id}
-          className="kix-card animate-fade-up flex items-center gap-4 p-4 transition-shadow duration-200 hover:shadow-soft"
+          className="brand-card animate-fade-up flex items-center gap-4 p-4 transition-shadow duration-200 hover:shadow-soft"
         >
           {image.preview && (
             <img

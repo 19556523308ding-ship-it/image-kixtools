@@ -141,7 +141,7 @@ export function App() {
 
           <a
             href={blogHref}
-            className="kix-card flex items-center gap-4 p-5 hover:border-brand-300 hover:shadow-lift hover:-translate-y-0.5 transition-all duration-200 ease-swift group"
+            className="brand-card flex items-center gap-4 p-5 hover:border-brand-300 hover:shadow-lift hover:-translate-y-0.5 transition-all duration-200 ease-swift group"
           >
             <span className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-brand-50 text-brand-500 group-hover:bg-brand-100 transition-colors">
               <BookOpen className="w-6 h-6" />

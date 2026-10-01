@@ -20,7 +20,7 @@ export function CompressionOptions({
   const { t } = useTranslation();
 
   return (
-    <section className="kix-card space-y-6 p-5 sm:p-6">
+    <section className="brand-card space-y-6 p-5 sm:p-6">
       <div>
         <label className="block text-sm font-semibold text-ink-700 mb-3">
           {t.outputFormat}
@@ -67,7 +67,7 @@ export function CompressionOptions({
             onChange={(e) =>
               onOptionsChange({ quality: Number(e.target.value) })
             }
-            className="kix-range"
+            className="brand-range"
             style={{ '--kix-progress': `${options.quality}%` } as React.CSSProperties}
           />
         </div>

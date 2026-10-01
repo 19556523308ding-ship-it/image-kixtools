@@ -56,7 +56,9 @@ export default defineConfig({
     ],
   },
   build: {
-    target: 'esnext',
+    // es2020：不降级到 esnext，避免 Safari 15/16、微信/UC/QQ 内置 webview
+    // 遇到 class static blocks、Array.at 等新语法直接报错白屏
+    target: 'es2020',
     rollupOptions: {
       // 两个 HTML 入口；Vite 会复用同一份 chunk，浏览器只需下载一次。
       input: {
