@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { Image, Trash2, BookOpen } from 'lucide-react';
+import { Trash2, BookOpen, ArrowRight } from 'lucide-react';
 import { CompressionOptions } from './components/CompressionOptions';
 import { DropZone } from './components/DropZone';
 import { ImageList } from './components/ImageList';
@@ -77,19 +77,34 @@ export function App() {
   const blogHref = lang === 'en' ? '/blog/' : '/zh-CN/blog/';
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-4xl mx-auto px-4 py-12">
-        <div className="flex justify-end mb-4">
-          <LanguageSwitcher />
-        </div>
+    <div className="min-h-screen bg-ink-50">
+      {/* 顶部品牌色氛围光，让页面不是一整块死灰 */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 top-0 h-72 bg-gradient-to-b from-brand-100/60 via-brand-50/30 to-transparent"
+      />
 
-        <div className="text-center mb-8">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <Image className="w-8 h-8 text-blue-500" />
-            <h1 className="text-3xl font-bold text-gray-900">{t.brand}</h1>
+      <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
+        <header className="flex items-center justify-end mb-8 sm:mb-10">
+          <LanguageSwitcher />
+        </header>
+
+        <section className="text-center mb-10 sm:mb-12">
+          <div className="flex items-center justify-center gap-3.5 mb-5">
+            <img
+              src="/logo.png"
+              alt=""
+              aria-hidden="true"
+              className="h-11 w-11 sm:h-12 sm:w-12 drop-shadow-[0_2px_6px_rgba(69,120,245,0.25)]"
+            />
+            <h1 className="text-display sm:text-display-lg font-bold text-ink-900">
+              {t.brand}
+            </h1>
           </div>
-          <p className="text-gray-600">{t.tagline}</p>
-        </div>
+          <p className="text-ink-600 leading-relaxed max-w-xl mx-auto">
+            {t.tagline}
+          </p>
+        </section>
 
         <div className="space-y-6">
           <CompressionOptions
@@ -113,7 +128,7 @@ export function App() {
           {images.length > 0 && (
             <button
               onClick={handleClearAll}
-              className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+              className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl border border-ink-200 bg-white text-sm font-medium text-ink-600 hover:border-err/40 hover:bg-err/5 hover:text-err transition-colors duration-150"
             >
               <Trash2 className="w-5 h-5" />
               {t.clearAll}
@@ -122,26 +137,29 @@ export function App() {
 
           <a
             href={blogHref}
-            className="flex items-center gap-4 p-5 bg-white rounded-lg shadow-sm border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all group"
+            className="kix-card flex items-center gap-4 p-5 hover:border-brand-300 hover:shadow-lift hover:-translate-y-0.5 transition-all duration-200 ease-swift group"
           >
-            <BookOpen className="w-8 h-8 text-blue-500 flex-shrink-0" />
-            <div className="flex-1 min-w-0">
-              <p className="font-semibold text-gray-900">{t.blogCardTitle}</p>
-              <p className="text-sm text-gray-500">{t.blogCardDesc}</p>
-            </div>
-            <span className="text-sm font-medium text-blue-500 group-hover:translate-x-0.5 transition-transform whitespace-nowrap">
-              {t.blogCardCta} →
+            <span className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-brand-50 text-brand-500 group-hover:bg-brand-100 transition-colors">
+              <BookOpen className="w-6 h-6" />
+            </span>
+            <span className="flex-1 min-w-0">
+              <p className="font-semibold text-ink-900">{t.blogCardTitle}</p>
+              <p className="text-sm text-ink-500 mt-0.5">{t.blogCardDesc}</p>
+            </span>
+            <span className="flex items-center gap-1 text-sm font-semibold text-brand-600 whitespace-nowrap group-hover:gap-2 transition-all">
+              {t.blogCardCta}
+              <ArrowRight className="w-4 h-4" />
             </span>
           </a>
         </div>
 
-        <footer className="mt-12 pt-6 border-t border-gray-200 text-center text-sm text-gray-400">
+        <footer className="mt-14 pt-6 border-t border-ink-200 text-center text-sm text-ink-400">
           <span>{t.footerBefore}</span>
           <a
             href="https://kixtools.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:text-blue-600 hover:underline"
+            className="text-brand-600 hover:text-brand-700 hover:underline underline-offset-2"
           >
             {t.footerLink}
           </a>

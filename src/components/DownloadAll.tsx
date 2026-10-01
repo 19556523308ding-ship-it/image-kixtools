@@ -13,7 +13,7 @@ export function DownloadAll({ onDownloadAll, count }: DownloadAllProps) {
   return (
     <button
       onClick={onDownloadAll}
-      className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
+      className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-ok text-white text-sm font-semibold shadow-soft hover:brightness-105 active:scale-[0.99] transition-all duration-150"
     >
       <Download className="w-5 h-5" />
       {t.downloadAllCount(count)}

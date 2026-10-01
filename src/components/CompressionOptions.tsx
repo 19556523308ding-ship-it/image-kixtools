@@ -9,6 +9,8 @@ interface CompressionOptionsProps {
   onOutputTypeChange: (type: OutputType) => void;
 }
 
+const FORMATS = ['avif', 'jpeg', 'jxl', 'png', 'webp'] as const;
+
 export function CompressionOptions({
   options,
   outputType,
@@ -18,34 +20,46 @@ export function CompressionOptions({
   const { t } = useTranslation();
 
   return (
-    <div className="space-y-6 bg-white p-6 rounded-lg shadow-sm">
+    <section className="kix-card space-y-6 p-5 sm:p-6">
       <div>
-        <label className="block text-sm font-medium text-gray-700 mb-2">
+        <label className="block text-sm font-semibold text-ink-700 mb-3">
           {t.outputFormat}
         </label>
         <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
-          {(['avif', 'jpeg', 'jxl', 'png', 'webp'] as const).map((format) => (
-            <button
-              key={format}
-              className={`px-4 py-2 rounded-md text-sm font-medium uppercase ${
-                outputType === format
-                  ? 'bg-blue-500 text-white'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-              }`}
-              onClick={() => onOutputTypeChange(format)}
-            >
-              {format}
-            </button>
-          ))}
+          {FORMATS.map((format) => {
+            const active = outputType === format;
+            return (
+              <button
+                key={format}
+                type="button"
+                aria-pressed={active}
+                className={`px-3 py-2 rounded-lg text-sm font-semibold uppercase tracking-wide transition-all duration-150 ease-swift ${
+                  active
+                    ? 'bg-brand-600 text-white shadow-soft'
+                    : 'bg-ink-100 text-ink-600 hover:bg-ink-200/80 hover:text-ink-900'
+                }`}
+                onClick={() => onOutputTypeChange(format)}
+              >
+                {format}
+              </button>
+            );
+          })}
         </div>
       </div>
 
       {outputType !== 'png' && (
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
-            {t.qualityLabel(options.quality)}
+          <label
+            htmlFor="quality-range"
+            className="mb-3 flex items-center justify-between text-sm font-semibold text-ink-700"
+          >
+            <span>{t.qualityLabel(options.quality)}</span>
+            <span className="rounded-md bg-brand-50 px-2 py-0.5 text-xs font-bold text-brand-700 tabular-nums">
+              {options.quality}%
+            </span>
           </label>
           <input
+            id="quality-range"
             type="range"
             min="1"
             max="100"
@@ -53,10 +67,11 @@ export function CompressionOptions({
             onChange={(e) =>
               onOptionsChange({ quality: Number(e.target.value) })
             }
-            className="w-full"
+            className="kix-range"
+            style={{ '--kix-progress': `${options.quality}%` } as React.CSSProperties}
           />
         </div>
       )}
-    </div>
+    </section>
   );
 }

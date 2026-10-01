@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# 本地 logo 设计工作目录（正式资源已拷入 public/）
+logo-candidates/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

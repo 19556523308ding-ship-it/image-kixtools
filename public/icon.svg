@@ -1,1 +1,17 @@
-<?xml version="1.0" ?><svg id="Icons" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style>.cls-1{fill:url(#linear-gradient);}.cls-2{fill:#fff;}.cls-3{fill:url(#linear-gradient-2);}</style><linearGradient gradientUnits="userSpaceOnUse" id="linear-gradient" x1="12" x2="12" y1="1" y2="17.101"><stop offset="0" stop-color="#a6f9ff"/><stop offset="1" stop-color="#3ed0f7"/></linearGradient><linearGradient id="linear-gradient-2" x1="12.05" x2="12.05" xlink:href="#linear-gradient" y1="12.159" y2="22.632"/></defs><rect class="cls-1" height="22" rx="4" width="22" x="1" y="1"/><circle class="cls-2" cx="7" cy="7" r="2"/><path class="cls-3" d="M23,18v1a4,4,0,0,1-4,4H5a4,4,0,0,1-3.9-3.1l7.193-7.193a1,1,0,0,1,1.414,0l1.807,1.807a1,1,0,0,0,1.46-.05L15.3,11.806a1,1,0,0,1,1.46-.05Z"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="kixg" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4f46e5"/>
+      <stop offset="0.55" stop-color="#2b5ae8"/>
+      <stop offset="1" stop-color="#14b8a6"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#kixg)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- 相框：上下宽、左右向内收腰，呼应「压缩」意象 -->
+    <path d="M20 16 H44 L36 32 L44 48 H20 L28 32 Z"/>
+    <!-- 左右两个向内挤压的箭头 -->
+    <path d="M8 23 L14.5 32 L8 41"/>
+    <path d="M56 23 L49.5 32 L56 41"/>
+  </g>
+</svg>
