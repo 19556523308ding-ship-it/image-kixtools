@@ -44,153 +44,153 @@
 
   <!-- 博客文章（中英各 10 篇） -->
   <url>
-    <loc>https://image.jinzhai.icu/blog/compress-png-online.html</loc>
+    <loc>https://image.jinzhai.icu/blog/compress-png-online</loc>
     <lastmod>2026-10-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/compress-png-online.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/compress-png-online.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/compress-png-online.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/compress-png-online"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/compress-png-online"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/compress-png-online"/>
   </url>
   <url>
-    <loc>https://image.jinzhai.icu/zh-CN/blog/compress-png-online.html</loc>
+    <loc>https://image.jinzhai.icu/zh-CN/blog/compress-png-online</loc>
     <lastmod>2026-10-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/compress-png-online.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/compress-png-online.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/compress-png-online.html"/>
-  </url>
-
-  <url>
-    <loc>https://image.jinzhai.icu/blog/avif-vs-webp.html</loc>
-    <lastmod>2026-10-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/avif-vs-webp.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/avif-vs-webp.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/avif-vs-webp.html"/>
-  </url>
-  <url>
-    <loc>https://image.jinzhai.icu/zh-CN/blog/avif-vs-webp.html</loc>
-    <lastmod>2026-10-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/avif-vs-webp.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/avif-vs-webp.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/avif-vs-webp.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/compress-png-online"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/compress-png-online"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/compress-png-online"/>
   </url>
 
   <url>
-    <loc>https://image.jinzhai.icu/blog/best-image-format-for-web.html</loc>
+    <loc>https://image.jinzhai.icu/blog/avif-vs-webp</loc>
     <lastmod>2026-10-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/best-image-format-for-web.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/best-image-format-for-web.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/best-image-format-for-web.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/avif-vs-webp"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/avif-vs-webp"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/avif-vs-webp"/>
   </url>
   <url>
-    <loc>https://image.jinzhai.icu/zh-CN/blog/best-image-format-for-web.html</loc>
+    <loc>https://image.jinzhai.icu/zh-CN/blog/avif-vs-webp</loc>
     <lastmod>2026-10-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/best-image-format-for-web.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/best-image-format-for-web.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/best-image-format-for-web.html"/>
-  </url>
-
-  <url>
-    <loc>https://image.jinzhai.icu/blog/batch-compress-images.html</loc>
-    <lastmod>2026-10-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/batch-compress-images.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/batch-compress-images.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/batch-compress-images.html"/>
-  </url>
-  <url>
-    <loc>https://image.jinzhai.icu/zh-CN/blog/batch-compress-images.html</loc>
-    <lastmod>2026-10-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/batch-compress-images.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/batch-compress-images.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/batch-compress-images.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/avif-vs-webp"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/avif-vs-webp"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/avif-vs-webp"/>
   </url>
 
   <url>
-    <loc>https://image.jinzhai.icu/blog/reduce-image-size-without-losing-quality.html</loc>
+    <loc>https://image.jinzhai.icu/blog/best-image-format-for-web</loc>
     <lastmod>2026-10-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/reduce-image-size-without-losing-quality.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/reduce-image-size-without-losing-quality.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/reduce-image-size-without-losing-quality.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/best-image-format-for-web"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/best-image-format-for-web"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/best-image-format-for-web"/>
   </url>
   <url>
-    <loc>https://image.jinzhai.icu/zh-CN/blog/reduce-image-size-without-losing-quality.html</loc>
+    <loc>https://image.jinzhai.icu/zh-CN/blog/best-image-format-for-web</loc>
     <lastmod>2026-10-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/reduce-image-size-without-losing-quality.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/reduce-image-size-without-losing-quality.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/reduce-image-size-without-losing-quality.html"/>
-  </url>
-
-  <url>
-    <loc>https://image.jinzhai.icu/blog/convert-images-to-webp.html</loc>
-    <lastmod>2026-10-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/convert-images-to-webp.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/convert-images-to-webp.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/convert-images-to-webp.html"/>
-  </url>
-  <url>
-    <loc>https://image.jinzhai.icu/zh-CN/blog/convert-images-to-webp.html</loc>
-    <lastmod>2026-10-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/convert-images-to-webp.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/convert-images-to-webp.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/convert-images-to-webp.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/best-image-format-for-web"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/best-image-format-for-web"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/best-image-format-for-web"/>
   </url>
 
   <url>
-    <loc>https://image.jinzhai.icu/blog/compress-jpeg-without-quality-loss.html</loc>
+    <loc>https://image.jinzhai.icu/blog/batch-compress-images</loc>
     <lastmod>2026-10-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/compress-jpeg-without-quality-loss.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/compress-jpeg-without-quality-loss.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/compress-jpeg-without-quality-loss.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/batch-compress-images"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/batch-compress-images"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/batch-compress-images"/>
   </url>
   <url>
-    <loc>https://image.jinzhai.icu/zh-CN/blog/compress-jpeg-without-quality-loss.html</loc>
+    <loc>https://image.jinzhai.icu/zh-CN/blog/batch-compress-images</loc>
     <lastmod>2026-10-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/compress-jpeg-without-quality-loss.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/compress-jpeg-without-quality-loss.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/compress-jpeg-without-quality-loss.html"/>
-  </url>
-
-  <url>
-    <loc>https://image.jinzhai.icu/blog/image-optimization-for-seo.html</loc>
-    <lastmod>2026-10-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/image-optimization-for-seo.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/image-optimization-for-seo.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/image-optimization-for-seo.html"/>
-  </url>
-  <url>
-    <loc>https://image.jinzhai.icu/zh-CN/blog/image-optimization-for-seo.html</loc>
-    <lastmod>2026-10-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/image-optimization-for-seo.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/image-optimization-for-seo.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/image-optimization-for-seo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/batch-compress-images"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/batch-compress-images"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/batch-compress-images"/>
   </url>
 
   <url>
-    <loc>https://image.jinzhai.icu/blog/browser-based-image-compression-privacy.html</loc>
+    <loc>https://image.jinzhai.icu/blog/reduce-image-size-without-losing-quality</loc>
     <lastmod>2026-10-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/browser-based-image-compression-privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/browser-based-image-compression-privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/browser-based-image-compression-privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/reduce-image-size-without-losing-quality"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/reduce-image-size-without-losing-quality"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/reduce-image-size-without-losing-quality"/>
   </url>
   <url>
-    <loc>https://image.jinzhai.icu/zh-CN/blog/browser-based-image-compression-privacy.html</loc>
+    <loc>https://image.jinzhai.icu/zh-CN/blog/reduce-image-size-without-losing-quality</loc>
     <lastmod>2026-10-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/browser-based-image-compression-privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/browser-based-image-compression-privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/browser-based-image-compression-privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/reduce-image-size-without-losing-quality"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/reduce-image-size-without-losing-quality"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/reduce-image-size-without-losing-quality"/>
   </url>
 
   <url>
-    <loc>https://image.jinzhai.icu/blog/image-compression-website-speed.html</loc>
+    <loc>https://image.jinzhai.icu/blog/convert-images-to-webp</loc>
     <lastmod>2026-10-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/image-compression-website-speed.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/image-compression-website-speed.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/image-compression-website-speed.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/convert-images-to-webp"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/convert-images-to-webp"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/convert-images-to-webp"/>
   </url>
   <url>
-    <loc>https://image.jinzhai.icu/zh-CN/blog/image-compression-website-speed.html</loc>
+    <loc>https://image.jinzhai.icu/zh-CN/blog/convert-images-to-webp</loc>
     <lastmod>2026-10-01</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/image-compression-website-speed.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/image-compression-website-speed.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/image-compression-website-speed.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/convert-images-to-webp"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/convert-images-to-webp"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/convert-images-to-webp"/>
+  </url>
+
+  <url>
+    <loc>https://image.jinzhai.icu/blog/compress-jpeg-without-quality-loss</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/compress-jpeg-without-quality-loss"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/compress-jpeg-without-quality-loss"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/compress-jpeg-without-quality-loss"/>
+  </url>
+  <url>
+    <loc>https://image.jinzhai.icu/zh-CN/blog/compress-jpeg-without-quality-loss</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/compress-jpeg-without-quality-loss"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/compress-jpeg-without-quality-loss"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/compress-jpeg-without-quality-loss"/>
+  </url>
+
+  <url>
+    <loc>https://image.jinzhai.icu/blog/image-optimization-for-seo</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/image-optimization-for-seo"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/image-optimization-for-seo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/image-optimization-for-seo"/>
+  </url>
+  <url>
+    <loc>https://image.jinzhai.icu/zh-CN/blog/image-optimization-for-seo</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/image-optimization-for-seo"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/image-optimization-for-seo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/image-optimization-for-seo"/>
+  </url>
+
+  <url>
+    <loc>https://image.jinzhai.icu/blog/browser-based-image-compression-privacy</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/browser-based-image-compression-privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/browser-based-image-compression-privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/browser-based-image-compression-privacy"/>
+  </url>
+  <url>
+    <loc>https://image.jinzhai.icu/zh-CN/blog/browser-based-image-compression-privacy</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/browser-based-image-compression-privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/browser-based-image-compression-privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/browser-based-image-compression-privacy"/>
+  </url>
+
+  <url>
+    <loc>https://image.jinzhai.icu/blog/image-compression-website-speed</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/image-compression-website-speed"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/image-compression-website-speed"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/image-compression-website-speed"/>
+  </url>
+  <url>
+    <loc>https://image.jinzhai.icu/zh-CN/blog/image-compression-website-speed</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://image.jinzhai.icu/blog/image-compression-website-speed"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://image.jinzhai.icu/zh-CN/blog/image-compression-website-speed"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://image.jinzhai.icu/blog/image-compression-website-speed"/>
   </url>
 
 </urlset>
