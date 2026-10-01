@@ -90,12 +90,16 @@ export function App() {
         </header>
 
         <section className="text-center mb-10 sm:mb-12">
-          <div className="flex items-center justify-center gap-3.5 mb-5">
+          <div className="flex items-center justify-center gap-4 mb-5">
             <img
               src="/logo.png"
+              srcSet="/logo.png 256w, /logo@2x.png 512w"
+              sizes="(min-width: 640px) 80px, 64px"
+              width={80}
+              height={80}
               alt=""
               aria-hidden="true"
-              className="h-11 w-11 sm:h-12 sm:w-12 drop-shadow-[0_2px_6px_rgba(69,120,245,0.25)]"
+              className="h-16 w-16 sm:h-20 sm:w-20 drop-shadow-[0_4px_12px_rgba(69,120,245,0.28)]"
             />
             <h1 className="text-display sm:text-display-lg font-bold text-ink-900">
               {t.brand}
