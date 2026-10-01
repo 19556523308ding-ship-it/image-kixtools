@@ -84,8 +84,8 @@ export function App() {
         className="pointer-events-none absolute inset-x-0 top-0 h-72 bg-gradient-to-b from-brand-100/60 via-brand-50/30 to-transparent"
       />
 
-      <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
-        <header className="flex items-center justify-end mb-4 sm:mb-6">
+      <div className="relative max-w-4xl mx-auto px-4 sm:px-6 pt-3 pb-8 sm:pt-4 sm:pb-10">
+        <header className="flex items-center justify-end mb-2 sm:mb-3">
           <LanguageSwitcher />
         </header>
 
