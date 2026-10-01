@@ -1,13 +1,15 @@
 User-agent: *
 Allow: /
 
-# 显式允许抓取静态资源
+# Googlebot 渲染 SPA 需要执行 JS，并把 WebAssembly 编码器拉下来，
+# 因此静态资源必须允许抓取（wasm 编码器位于 /assets/ 下）
 Allow: /assets/
 Allow: /icon.svg
 Allow: /icon-128x128.png
 Allow: /icon-512x512.png
+Allow: /logo.png
+Allow: /logo@2x.png
 Allow: /meta.jpg
 Allow: /site.webmanifest
-Allow: /sitemap.xml
 
 Sitemap: https://image.jinzhai.icu/sitemap.xml

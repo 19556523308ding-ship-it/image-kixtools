@@ -28,33 +28,112 @@
     <meta name="twitter:title" content="Jin图片工具 - 免费在线图片压缩" />
     <meta name="twitter:description" content="在浏览器中免费压缩与转换图片，支持 AVIF、WebP、JPEG、JPEG XL、PNG，无需上传、保护隐私、支持批量压缩。" />
     <meta name="twitter:image" content="https://image.jinzhai.icu/meta.jpg" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebApplication",
-        "name": "Jin图片工具",
-        "alternateName": "Jin Image Tools",
-        "url": "https://image.jinzhai.icu/zh-CN/",
-        "applicationCategory": "MultimediaApplication",
-        "operatingSystem": "Any (Web Browser)",
-        "description": "免费在线图片压缩与格式转换工具，全部在浏览器本地处理，无需上传，保护隐私。支持 AVIF、WebP、JPEG、JPEG XL、PNG 格式互转。",
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CNY" },
-        "featureList": [
-          "AVIF 压缩",
-          "WebP 转换",
-          "JPEG 压缩",
-          "PNG 优化",
-          "JPEG XL 支持",
-          "批量处理",
-          "浏览器端处理（无需上传）",
-          "可调节压缩质量"
-        ]
+        <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://image.jinzhai.icu/#organization",
+      "name": "Jinzhai",
+      "alternateName": [
+        "Jin Image Tools",
+        "Jin图片工具"
+      ],
+      "url": "https://jinzhai.icu",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://image.jinzhai.icu/#logo",
+        "url": "https://image.jinzhai.icu/icon-512x512.png",
+        "width": 512,
+        "height": 512,
+        "caption": "Jinzhai"
+      },
+      "image": {
+        "@id": "https://image.jinzhai.icu/#logo"
       }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://image.jinzhai.icu/#website",
+      "url": "https://image.jinzhai.icu/",
+      "name": "Jin图片工具",
+      "description": "免费在线图片压缩与格式转换工具，全部在浏览器本地处理，无需上传，保护隐私。支持 AVIF、WebP、JPEG、JPEG XL、PNG 格式互转。",
+      "publisher": {
+        "@id": "https://image.jinzhai.icu/#organization"
+      },
+      "inLanguage": "zh-CN",
+      "dateModified": "2026-10-01T00:00:00+08:00"
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://image.jinzhai.icu/#app",
+      "name": "Jin图片工具",
+      "alternateName": "Jin Image Tools",
+      "url": "https://image.jinzhai.icu/zh-CN/",
+      "description": "免费在线图片压缩与格式转换工具，全部在浏览器本地处理，无需上传，保护隐私。支持 AVIF、WebP、JPEG、JPEG XL、PNG 格式互转。",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Any (Web Browser)",
+      "featureList": [
+        "AVIF 压缩",
+        "WebP 转换",
+        "JPEG 压缩",
+        "PNG 优化",
+        "JPEG XL 支持",
+        "批量处理",
+        "浏览器端处理（无需上传）",
+        "可调节压缩质量"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CNY"
+      },
+      "image": "https://image.jinzhai.icu/meta.jpg",
+      "screenshot": "https://image.jinzhai.icu/meta.jpg",
+      "browserRequirements": "Requires JavaScript. Runs entirely client-side (no upload).",
+      "isAccessibleForFree": true,
+      "publisher": {
+        "@id": "https://image.jinzhai.icu/#organization"
+      },
+      "provider": {
+        "@id": "https://image.jinzhai.icu/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://image.jinzhai.icu/#website"
+      },
+      "inLanguage": "zh-CN"
+    }
+  ]
+}
     </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <noscript>Jin图片工具是一款免费的在线图片压缩工具，需要启用 JavaScript。请在浏览器中启用 JavaScript 后压缩与转换图片。</noscript>
+    <noscript>
+      <div style="max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem;font-family:system-ui,-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;color:#1c2430;line-height:1.7">
+        <h1>Jin图片工具 —— 免费在线图片压缩与格式转换</h1>
+        <p>在浏览器中直接把图片压缩并转换为 <strong>AVIF</strong>、<strong>WebP</strong>、<strong>JPEG</strong>、<strong>JPEG XL</strong> 与 <strong>PNG</strong>。图片不会上传到任何服务器，全部在本地处理，隐私更有保障。</p>
+
+        <h2>功能</h2>
+        <ul>
+          <li>质量可自由调节，转换后体积能缩小多少一目了然</li>
+          <li>支持批量处理：一次拖入整个文件夹，一键全部下载</li>
+          <li>AVIF、WebP、JPEG XL 编码基于 WebAssembly 本地完成，不经服务器</li>
+          <li>页面加载完成后离线也能继续压缩</li>
+        </ul>
+
+        <h2>使用方法</h2>
+        <ol>
+          <li>选择输出格式，拖动质量滑块设定目标画质。</li>
+          <li>把图片拖进拖拽区，或点击选择文件。</li>
+          <li>单张下载，也可以一键打包下载全部。</li>
+        </ol>
+
+        <p>提示：压缩功能需要 JavaScript 支持，请启用后再开始转换。</p>
+        <p>延伸阅读：<a href="/zh-CN/blog/">图片压缩博客</a></p>
+      </div>
+    </noscript>
   </body>
 </html>

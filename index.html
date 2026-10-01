@@ -27,28 +27,84 @@
     <meta name="twitter:title" content="Jin Image Tools - Free Online Image Compression" />
     <meta name="twitter:description" content="Compress and convert images to AVIF, WebP, JPEG, JPEG XL, and PNG in your browser. Private, free, batch processing." />
     <meta name="twitter:image" content="https://image.jinzhai.icu/meta.jpg" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebApplication",
-        "name": "Jin Image Tools",
-        "alternateName": "Jin图片工具",
-        "url": "https://image.jinzhai.icu/",
-        "applicationCategory": "MultimediaApplication",
-        "operatingSystem": "Any (Web Browser)",
-        "description": "Free online image compression and format conversion tool that runs 100% in your browser. Compress and convert images to AVIF, WebP, JPEG, JPEG XL, and PNG.",
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-        "featureList": [
-          "AVIF compression",
-          "WebP conversion",
-          "JPEG compression",
-          "PNG optimization",
-          "JPEG XL support",
-          "Batch processing",
-          "Browser-based (no upload)",
-          "Adjustable quality"
-        ]
+        <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://image.jinzhai.icu/#organization",
+      "name": "Jinzhai",
+      "alternateName": [
+        "Jin Image Tools",
+        "Jin图片工具"
+      ],
+      "url": "https://jinzhai.icu",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://image.jinzhai.icu/#logo",
+        "url": "https://image.jinzhai.icu/icon-512x512.png",
+        "width": 512,
+        "height": 512,
+        "caption": "Jinzhai"
+      },
+      "image": {
+        "@id": "https://image.jinzhai.icu/#logo"
       }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://image.jinzhai.icu/#website",
+      "url": "https://image.jinzhai.icu/",
+      "name": "Jin Image Tools",
+      "description": "Free online image compression and format conversion tool that runs 100% in your browser. Compress and convert images to AVIF, WebP, JPEG, JPEG XL, and PNG.",
+      "publisher": {
+        "@id": "https://image.jinzhai.icu/#organization"
+      },
+      "inLanguage": "en-US",
+      "dateModified": "2026-10-01T00:00:00+08:00"
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://image.jinzhai.icu/#app",
+      "name": "Jin Image Tools",
+      "alternateName": "Jin图片工具",
+      "url": "https://image.jinzhai.icu/",
+      "description": "Free online image compression and format conversion tool that runs 100% in your browser. Compress and convert images to AVIF, WebP, JPEG, JPEG XL, and PNG.",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Any (Web Browser)",
+      "featureList": [
+        "AVIF compression",
+        "WebP conversion",
+        "JPEG compression",
+        "PNG optimization",
+        "JPEG XL support",
+        "Batch processing",
+        "Browser-based (no upload)",
+        "Adjustable quality"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "image": "https://image.jinzhai.icu/meta.jpg",
+      "screenshot": "https://image.jinzhai.icu/meta.jpg",
+      "browserRequirements": "Requires JavaScript. Runs entirely client-side (no upload).",
+      "isAccessibleForFree": true,
+      "publisher": {
+        "@id": "https://image.jinzhai.icu/#organization"
+      },
+      "provider": {
+        "@id": "https://image.jinzhai.icu/#organization"
+      },
+      "isPartOf": {
+        "@id": "https://image.jinzhai.icu/#website"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
     </script>    
     <script async="async" data-cfasync="false" src="https://pl31062414.profitableratecpmnetwork.com/e5f58a7cea1b0463c55e70988717b1aa/invoke.js"></script>
 <div id="container-e5f58a7cea1b0463c55e70988717b1aa"></div>
@@ -56,6 +112,29 @@
   <body> 
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <noscript>Jin Image Tools is a free online image compressor that requires JavaScript. Please enable JavaScript to compress and convert images.</noscript>
+    <noscript>
+      <div style="max-width:44rem;margin:0 auto;padding:2.5rem 1.25rem;font-family:system-ui,-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;color:#1c2430;line-height:1.7">
+        <h1>Jin Image Tools — Free Online Image Compression &amp; Format Conversion</h1>
+        <p>Compress and convert images to <strong>AVIF</strong>, <strong>WebP</strong>, <strong>JPEG</strong>, <strong>JPEG XL</strong> and <strong>PNG</strong> right inside your browser. Files never get uploaded — everything runs locally, so your pictures stay private.</p>
+
+        <h2>What it does</h2>
+        <ul>
+          <li>Adjustable quality with an instant estimate of how much smaller each file gets</li>
+          <li>Batch processing: drop an entire folder and download everything in one click</li>
+          <li>AVIF, WebP and JPEG XL encoding powered by WebAssembly — no server round-trip</li>
+          <li>Keeps working offline once the page has loaded</li>
+        </ul>
+
+        <h2>How to use it</h2>
+        <ol>
+          <li>Choose an output format and drag the quality slider to the size you want.</li>
+          <li>Drop your images into the drop zone, or click to pick files.</li>
+          <li>Download a single result, or grab all of them at once.</li>
+        </ol>
+
+        <p>Note: the compressor itself requires JavaScript. Enable it to start converting images.</p>
+        <p>More guides: <a href="/blog/">Image Compression Blog</a></p>
+      </div>
+    </noscript>
   </body>
 </html>

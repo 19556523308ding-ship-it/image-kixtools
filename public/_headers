@@ -1,0 +1,23 @@
+# 带内容 hash 的构建产物（文件名随内容变化）→ 可安全长缓存一年
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+# 站点图标与社交卡片图
+/*.svg
+  Cache-Control: public, max-age=604800
+/*.png
+  Cache-Control: public, max-age=604800
+/*.jpg
+  Cache-Control: public, max-age=604800
+
+# 文章页
+/*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+  X-Content-Type-Options: nosniff
+
+# SPA 入口、blog 列表、robots 与 sitemap
+/*
+  Cache-Control: public, max-age=3600, must-revalidate
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Content-Type-Options: nosniff
