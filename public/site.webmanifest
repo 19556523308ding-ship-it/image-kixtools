@@ -1,6 +1,6 @@
 {
-  "name": "Kix Image Tools - Batch Browser-based Image Compression",
-  "short_name": "Kix Image Tools",
+  "name": "Jin Image Tools - Batch Browser-based Image Compression",
+  "short_name": "Jin Image Tools",
   "description": "Fast, efficient batch image compression right in your browser. Supports AVIF, JPEG, JPEG XL, PNG, and WebP formats.",
   "lang": "en",
   "start_url": "/",

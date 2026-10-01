@@ -1,7 +1,7 @@
 // 英文文案
 export const en = {
   // 品牌与标语
-  brand: 'Kix Image Tools',
+  brand: 'Jin Image Tools',
   tagline: 'Free online image compression and format conversion — compress and convert images to AVIF, WebP, JPEG, JPEG XL, and PNG, 100% in your browser, private, no upload, with batch processing.',
 
   // 压缩选项
@@ -33,9 +33,9 @@ export const en = {
   switchTo: '中文',
   switchToAria: 'Switch to Chinese',
 
-  // 页脚（KixTools 为可点击链接，外链）
+  // 页脚（Jinzhai 为可点击链接，外链）
   footerBefore: '© 2026 · Free Online Image Tools | Powered by ',
-  footerLink: 'KixTools',
+  footerLink: 'Jinzhai',
   footerAfter: '',
 
   // 博客入口卡片（指向 /blog/）

@@ -3,7 +3,7 @@ import type { Translation } from './en';
 // 中文文案
 export const zhCN: Translation = {
   // 品牌与标语
-  brand: 'Kix图片工具',
+  brand: 'Jin图片工具',
   tagline: '免费在线图片压缩与格式转换工具 —— 支持 AVIF、WebP、JPEG、JPEG XL、PNG，浏览器本地处理，无需上传、保护隐私，支持批量压缩。',
 
   // 压缩选项
@@ -35,9 +35,9 @@ export const zhCN: Translation = {
   switchTo: 'English',
   switchToAria: '切换到英文',
 
-  // 页脚（KixTools 为可点击链接，外链）
+  // 页脚（Jinzhai 为可点击链接，外链）
   footerBefore: '© 2026 · 免费在线图片处理｜由 ',
-  footerLink: 'KixTools',
+  footerLink: 'Jinzhai',
   footerAfter: ' 提供',
 
   // 博客入口卡片（指向 /zh-CN/blog/）

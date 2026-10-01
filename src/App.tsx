@@ -85,7 +85,7 @@ export function App() {
       />
 
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
-        <header className="flex items-center justify-end mb-8 sm:mb-10">
+        <header className="flex items-center justify-end mb-4 sm:mb-6">
           <LanguageSwitcher />
         </header>
 
@@ -94,12 +94,12 @@ export function App() {
             <img
               src="/logo.png"
               srcSet="/logo.png 256w, /logo@2x.png 512w"
-              sizes="(min-width: 640px) 80px, 64px"
-              width={80}
-              height={80}
+              sizes="(min-width: 640px) 96px, 80px"
+              width={96}
+              height={96}
               alt=""
               aria-hidden="true"
-              className="h-16 w-16 sm:h-20 sm:w-20 drop-shadow-[0_4px_12px_rgba(69,120,245,0.28)]"
+              className="h-20 w-20 sm:h-24 sm:w-24 drop-shadow-[0_4px_14px_rgba(69,120,245,0.3)]"
             />
             <h1 className="text-display sm:text-display-lg font-bold text-ink-900">
               {t.brand}
@@ -160,7 +160,7 @@ export function App() {
         <footer className="mt-14 pt-6 border-t border-ink-200 text-center text-sm text-ink-400">
           <span>{t.footerBefore}</span>
           <a
-            href="https://kixtools.com"
+            href="https://jinzhai.icu"
             target="_blank"
             rel="noopener noreferrer"
             className="text-brand-600 hover:text-brand-700 hover:underline underline-offset-2"
