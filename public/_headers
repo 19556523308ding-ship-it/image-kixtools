@@ -1,16 +1,42 @@
 # ---------------------------------------------------------------
 # Cloudflare Pages 静态响应头
-# 注意：若 CF 后台存在「缓存到期时间(Cache Expiry)」类 Cache Rule，
-# 其优先级高于本文件的 Cache-Control。改完请在线上核对：
-#   curl -sI https://image.jinzhai.icu/assets/<hash>.css | grep -i cache
-# 期望：max-age=31536000, immutable
+#
+# 合并语义（关键）：一个请求可能匹配多条规则，Cloudflare 会把所有规则里的
+# 头都应用上；只有「同名头」（这里就是 Cache-Control）由最后一条匹配的规则
+# 决定。所以安全头只在下面第 1 块定义一次，缓存策略则写在更具体的规则里，
+# 让最后一条匹配者决定真实值。
+#
+# 上一版把通配 /* 写在文件最末尾，等于用它的 3600 覆盖了 /assets/* 的
+# 31536000 与图片的 604800 —— 线上实测 /assets 只拿到 max-age=14400。
+# 本版调整顺序修正该问题。
+#
+# 在线核对：
+#   curl -sI https://image.jinzhai.icu/assets/main-<hash>.js | grep -i cache-control
+#     期望 public, max-age=31536000, immutable
+#   curl -sI https://image.jinzhai.icu/logo.png | grep -i cache-control
+#     期望 public, max-age=604800
+# 若仍显示 14400，说明 CF 后台「缓存到期时间」Cache Rule 优先级更高，
+# 需要在 Caching → Cache Rules 里给 */assets/* 显式设 1 year + Immutable。
 # ---------------------------------------------------------------
 
-# 带内容 hash 的构建产物（JS / CSS / wasm 解码器）→ 可安全长缓存一年
+# 1) 全站安全头（所有路径生效，只定义一次）
+/*
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Strict-Transport-Security: max-age=63072000
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://umami.aimei.eu.org 'wasm-unsafe-eval'; worker-src 'self' blob:; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; connect-src 'self' https://umami.aimei.eu.org; media-src 'self' blob:; object-src 'none'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'
+
+# 2) 默认缓存：SPA 入口、blog 列表、robots、sitemap（1 小时重校验，内容更新能尽快生效）
+/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# 3) 带内容 hash 的构建产物（JS / CSS / wasm 解码器）→ 一年 + 不发起二次校验
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
 
-# 站点图标与社交卡片图
+# 4) 站点图标 / 品牌图 / 社交卡片（内容稳定 → 7 天）
 /*.svg
   Cache-Control: public, max-age=604800
 /*.png
@@ -18,16 +44,6 @@
 /*.jpg
   Cache-Control: public, max-age=604800
 
-# 文章页
+# 5) 文章页（正文会更新 → 1 小时重校验，兼顾抓取新鲜度）
 /*.html
   Cache-Control: public, max-age=3600, must-revalidate
-
-# SPA 入口、blog 列表、robots 与 sitemap
-/*
-  Cache-Control: public, max-age=3600, must-revalidate
-  Referrer-Policy: strict-origin-when-cross-origin
-  X-Content-Type-Options: nosniff
-  X-Frame-Options: SAMEORIGIN
-  Strict-Transport-Security: max-age=63072000
-  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
-  Content-Security-Policy: default-src 'self'; script-src 'self' https://umami.aimei.eu.org 'wasm-unsafe-eval'; worker-src 'self' blob:; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; connect-src 'self' https://umami.aimei.eu.org; media-src 'self' blob:; object-src 'none'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'
